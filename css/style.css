@@ -1,0 +1,52 @@
+/**** Main colors defined as variables for the webpage ***/
+:root {
+    --color-light: #FFFDF2;
+    --color-medium: #B1ABB4;
+    --color-dark: #393418;
+    --color-red: #CD1811;
+}
+
+/**** Basic definitions for the webpage ****/
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit; 
+}
+
+html {
+    animation: 2s fadein;
+    font-size: 62.5%; /* root is 10px = 1rem */
+}
+
+body {
+    box-sizing: border-box;
+    font-family: 'Red Hat Text', sans-serif;
+    font-size: 1rem; /* equals 10px */
+    margin: 10px;
+    line-height: 1.5;
+    background: var(--color-light);
+}
+
+/**** Main Structure of the Page ****/
+
+
+/**** Header ****/
+
+
+
+
+/**** Content and Sidebar ****/
+
+/**** Footer ****/
+
+
+
+
+
+
+
+
+
+/**** Media Queries ****/
