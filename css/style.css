@@ -23,7 +23,7 @@ html {
 body {
     box-sizing: border-box;
     font-family: 'Red Hat Text', sans-serif;
-    font-size: 1rem; /* equals 10px */
+    font-size: 2rem; /* equals 10px */
     margin: 10px;
     line-height: 1.5;
     background: var(--color-light);
@@ -31,22 +31,40 @@ body {
 
 /**** Main Structure of the Page ****/
 
-
+.container {
+    background: green;
+    display: grid;
+}
 /**** Header ****/
+header {
+    display: grid;
+    text-transform: uppercase;
+    background: lightgreen;
+}
+header a {
+    text-decoration: none;
+    text-align: center;
+}
 
-
-
+header a:hover {
+    transition: 0.5s;
+    color: var(--color-red);
+}
 
 /**** Content and Sidebar ****/
 
-/**** Footer ****/
-
-
-
-
-
-
-
-
+.article {
+    background: yellow;
+}
 
 /**** Media Queries ****/
+@media(max-width: 500px) {
+    body {
+        background: red;
+    }
+
+    header {
+        grid-template-columns: 1fr;
+        
+    }
+}
