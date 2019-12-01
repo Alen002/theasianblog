@@ -26,7 +26,7 @@ html {
 body {
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
-    font-size: 2rem; /* equals 10px */
+    font-size: 2rem;
     margin: 10px;
     background: var(--color-light);
 }
@@ -38,6 +38,12 @@ body {
     
 }
 
+a {
+    text-decoration: none;
+}
+
+
+
 /**** Header ****/
 header {
     display: grid;
@@ -46,7 +52,6 @@ header {
    
 }
 header a {
-    text-decoration: none;
     text-align: center;
 }
 
@@ -57,7 +62,7 @@ header a:hover {
 
 /**** Blogs and Sidebar ****/
 
-.section {
+section {
     display: grid;
 }
 
@@ -65,23 +70,38 @@ header a:hover {
     display: flex;
     flex-direction: row;
     height: 100px;
+    border-bottom: solid 1px var(--color-medium);
+    padding: 5px;
 }
 
 .blog-content {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-        
+    margin-left: 5px;  
 }
 
+img {
+    border-radius: 5px;
+}
+
+.sidebar {
+    margin-top: 2%;
+}
+
+.sidebar ul li {
+    line-height: 3rem;
+}
 /**** Footer ****/
 footer {
     background: black;
     color: var(--color-light);
     text-align: center;
 }
+
+
 /**** Media Queries ****/
-@media(max-width: 500px) {
+@media(max-width: 600px) {
     body {
         background: red;
     }
@@ -89,19 +109,29 @@ footer {
     header {
         grid-template-columns: 1fr;
     }
-
-    
+   
     img {
             /* width: 38%;
             height: auto; */
             width: 40%; /* for height see blog */
             /*height: 10vw; */
             object-fit: cover; /* crops the image */
-            border-radius: 5px;
-
     }
     .blog p {
         display: none;
     } 
+}
+
+@media(min-width: 601px) and (max-width: 900px) {
+    img {
+        width: 40%;
+        object-fit: cover; 
+    }
+
+    .blog {
+        padding: 5px;
+        font-size: 1.8rem;
+        height: 150px;
+    }
 }
 
