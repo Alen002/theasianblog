@@ -1,10 +1,13 @@
-/**** Main colors defined as variables for the webpage ***/
-:root {
+/**** Main colors defined as variables for the webpage ****/
+/* :root {
     --color-light: #FFFDF2;
     --color-medium: #B1ABB4;
     --color-dark: #393418;
     --color-red: #CD1811;
-}
+} */
+
+@import './variables.css';
+
 
 /**** Basic definitions for the webpage ****/
 *,
@@ -22,24 +25,25 @@ html {
 
 body {
     box-sizing: border-box;
-    font-family: 'Red Hat Text', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 2rem; /* equals 10px */
     margin: 10px;
-    line-height: 1.5;
     background: var(--color-light);
 }
-
-/**** Main Structure of the Page ****/
 
 .container {
     background: green;
     display: grid;
+    grid-template-columns: 1fr;
+    
 }
+
 /**** Header ****/
 header {
     display: grid;
     text-transform: uppercase;
     background: lightgreen;
+   
 }
 header a {
     text-decoration: none;
@@ -51,12 +55,31 @@ header a:hover {
     color: var(--color-red);
 }
 
-/**** Content and Sidebar ****/
+/**** Blogs and Sidebar ****/
 
-.article {
-    background: yellow;
+.section {
+    display: grid;
 }
 
+.blog {
+    display: flex;
+    flex-direction: row;
+    height: 100px;
+}
+
+.blog-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+        
+}
+
+/**** Footer ****/
+footer {
+    background: black;
+    color: var(--color-light);
+    text-align: center;
+}
 /**** Media Queries ****/
 @media(max-width: 500px) {
     body {
@@ -65,6 +88,20 @@ header a:hover {
 
     header {
         grid-template-columns: 1fr;
-        
     }
+
+    
+    img {
+            /* width: 38%;
+            height: auto; */
+            width: 40%; /* for height see blog */
+            /*height: 10vw; */
+            object-fit: cover; /* crops the image */
+            border-radius: 5px;
+
+    }
+    .blog p {
+        display: none;
+    } 
 }
+

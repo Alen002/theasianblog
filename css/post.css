@@ -1,0 +1,6 @@
+/* How to import variablesfrom style.css?????*/
+@import './variables.css';
+
+body {
+    color: var(--color-red);
+}
