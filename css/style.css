@@ -110,9 +110,8 @@ footer {
         grid-template-columns: 1fr;
     }
    
-    img {
-            
-            height: auto; */
+    img {      
+            height: auto;
             width: 40%; /* for height see blog */
             /*height: 10vw; */
             object-fit: cover; /* crops the image */
