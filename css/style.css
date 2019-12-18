@@ -134,3 +134,42 @@ footer {
     }
 }
 
+@media(min-width: 901px) {
+
+    img {
+        width: 100%;
+        object-fit: cover;
+        height: 80%;
+    }   
+
+    
+    .section {
+        display: grid;
+        grid-template-columns: 7fr 1fr
+    }
+
+    
+    
+    .article {
+        border: red solid;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    
+    
+    .blog {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        height: 400px; 
+        padding: 5px;
+    }
+    
+    .blog-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-left: 5px;  
+        border-bottom: solid 1px var(--color-medium); 
+    } 
+}
