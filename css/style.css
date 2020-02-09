@@ -98,6 +98,9 @@ footer {
     text-align: center;
 }
 
+.sidebar {
+    text-align: center;
+}
 
 /**** Media Queries ****/
 @media(max-width: 600px) {
