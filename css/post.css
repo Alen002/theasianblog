@@ -79,4 +79,8 @@ footer {
     position: fixed;
     bottom: 0;
     width:99%;
+    text-align: center;
+    font-size: 25px;
+    padding: 3px;
+    word-spacing: 10px;
 }

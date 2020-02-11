@@ -96,6 +96,13 @@ footer {
     background: black;
     color: var(--color-light);
     text-align: center;
+    
+    bottom: 0;
+    width:99%;
+    text-align: center;
+    font-size: 25px;
+    padding: 3px;
+    word-spacing: 10px;
 }
 
 .sidebar {
