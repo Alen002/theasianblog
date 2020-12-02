@@ -34,12 +34,17 @@ body {
 .container {
     background: white; /* var(--color-light); */
     display: grid;
-    grid-template-columns: 1fr;
-    
+    grid-template-columns: 1fr;   
 }
 
 a {
     text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: rgb(23, 99, 30);
+    text-decoration: underline;
 }
 
 /**** Header ****/
