@@ -28,11 +28,11 @@ body {
     font-family: 'Roboto', sans-serif;
     font-size: 2rem;
     margin: 10px;
-    background: var(--color-light);
+    background: white; /* var(--color-light); */
 }
 
 .container {
-    background: var(--color-light);
+    background: white; /* var(--color-light); */
     display: grid;
     grid-template-columns: 1fr;
     
@@ -46,7 +46,7 @@ a {
 header {
     display: grid;
     text-transform: uppercase;
-    background: var(--color-light);
+    background: white; /* var(--color-light); */
     border-top: solid 1px var(--color-medium);
     border-bottom: solid 1px var(--color-medium);
 }
