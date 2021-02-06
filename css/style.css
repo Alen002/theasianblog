@@ -52,17 +52,23 @@ a:hover {
 header {
     display: grid;
     text-transform: uppercase;
-    background: white; /* var(--color-light); */
+    font-weight: lighter;
+    background: #3C3C3C;
+    color: white;
     border-top: solid 1px var(--color-medium);
     border-bottom: solid 1px var(--color-medium);
+    margin: 0;
+    font-size: 17px;
 }
 header a {
     text-align: center;
+    color: white;
 }
 
 header a:hover {
     transition: 0.5s;
-    color: var(--color-red);
+    color: lightblue;
+    text-decoration: none;
 }
 
 /**** Blogs and Sidebar ****/
@@ -106,6 +112,7 @@ footer {
     bottom: 0;
     width:99%;
     text-align: center;
+    font-weight: lighter;
     font-size: 16px;
     padding: 3px;
     /* word-spacing: 10px; */
