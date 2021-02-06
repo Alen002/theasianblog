@@ -25,10 +25,11 @@ html {
 
 body {
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Karla', sans-serif;
     font-size: 2rem;
     margin: 10px;
     background: white; /* var(--color-light); */
+    color: #011838;
 }
 
 .container {
@@ -57,7 +58,7 @@ header {
     color: white;
     border-top: solid 1px var(--color-medium);
     border-bottom: solid 1px var(--color-medium);
-    margin: 0;
+   
     font-size: 17px;
 }
 header a {
@@ -97,6 +98,7 @@ img {
 
 .sidebar {
     margin-top: 2%;
+    text-align: center;
 }
 
 .sidebar ul li {
@@ -116,10 +118,6 @@ footer {
     font-size: 16px;
     padding: 3px;
     /* word-spacing: 10px; */
-}
-
-.sidebar {
-    text-align: center;
 }
 
 /**** Media Queries ****/
