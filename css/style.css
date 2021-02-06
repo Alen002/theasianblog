@@ -39,11 +39,12 @@ body {
 
 a {
     text-decoration: none;
-    color: black;
+   /*  color: black; */
+    color: #0070FF;
 }
 
 a:hover {
-    color: rgb(23, 99, 30);
+    /* color: blue; */
     text-decoration: underline;
 }
 
@@ -98,16 +99,16 @@ img {
 }
 /**** Footer ****/
 footer {
-    background: black;
+    margin-top: 10px;
     color: var(--color-light);
     text-align: center;
-    
+    color: black;
     bottom: 0;
     width:99%;
     text-align: center;
-    font-size: 25px;
+    font-size: 16px;
     padding: 3px;
-    word-spacing: 10px;
+    /* word-spacing: 10px; */
 }
 
 .sidebar {
